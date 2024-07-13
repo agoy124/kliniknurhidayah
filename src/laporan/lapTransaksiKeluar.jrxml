@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4f485437-34a2-4085-b8cc-42cb2d589868">
+	<property name="ireport.zoom" value="1.2100000000000002"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="startDate" class="java.util.Date"/>
+	<parameter name="endDate" class="java.util.Date"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     pengeluaran.`id_transaksi` AS pengeluaran_id_transaksi,
+     pengeluaran.`tgl_trx` AS pengeluaran_tgl_trx,
+     pengeluaran.`penerima` AS pengeluaran_penerima,
+     pengeluaran.`jumlah` AS pengeluaran_jumlah,
+     pengeluaran.`keperluan` AS pengeluaran_keperluan
+FROM
+     `pengeluaran` pengeluaran WHERE pengeluaran_tgl_trx BETWEEN $P{startDate} AND $P{endDate}]]>
+	</queryString>
+	<field name="pengeluaran_id_transaksi" class="java.lang.Integer"/>
+	<field name="pengeluaran_tgl_trx" class="java.sql.Date"/>
+	<field name="pengeluaran_penerima" class="java.lang.String"/>
+	<field name="pengeluaran_jumlah" class="java.lang.Integer"/>
+	<field name="pengeluaran_keperluan" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<columnHeader>
+		<band height="28" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="2" width="100" height="20" uuid="5009b516-5e0d-4d60-8b27-a4880d8c30e0"/>
+				<text><![CDATA[pengeluaran_id_transaksi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="104" y="2" width="100" height="20" uuid="3f6409ae-73d2-4519-96d1-c871e7e7947c"/>
+				<text><![CDATA[pengeluaran_tgl_trx]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="204" y="2" width="100" height="20" uuid="10f2a7fb-e174-4e56-88ab-0902d8c0d314"/>
+				<text><![CDATA[pengeluaran_penerima]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="304" y="2" width="100" height="20" uuid="d02e2c1c-a934-41e8-a510-db507da8b442"/>
+				<text><![CDATA[pengeluaran_jumlah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="404" y="2" width="100" height="20" uuid="5462f07f-e38b-4e6b-9fd7-b75f40864813"/>
+				<text><![CDATA[pengeluaran_keperluan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="27" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="6" width="100" height="20" uuid="e77ca5ee-3318-4af9-8834-f7513d48f583"/>
+				<textFieldExpression><![CDATA[$F{pengeluaran_id_transaksi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="204" y="6" width="100" height="20" uuid="a41350e7-0808-45f6-83f7-563876dcfbef"/>
+				<textFieldExpression><![CDATA[$F{pengeluaran_penerima}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="304" y="6" width="100" height="20" uuid="b412ed8c-7719-4fb0-a87c-f8552bc258e8"/>
+				<textFieldExpression><![CDATA[$F{pengeluaran_jumlah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="404" y="6" width="100" height="20" uuid="5ed72f60-f08f-4167-871f-34b4d4d1021b"/>
+				<textFieldExpression><![CDATA[$F{pengeluaran_keperluan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="6" width="100" height="20" uuid="634d5266-7fdf-4675-9087-231dd42e8d88"/>
+				<textFieldExpression><![CDATA[$F{pengeluaran_tgl_trx}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>
