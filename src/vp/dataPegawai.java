@@ -458,7 +458,7 @@ public class dataPegawai extends javax.swing.JFrame {
     }//GEN-LAST:event_tPegawaiMouseClicked
 
     private void bCetakActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCetakActionPerformed
-        String path =".\\src\\laporan\\datapasien.jasper";
+        String path =".\\src\\laporan\\pegawai.jasper";
         JasperReport reports; 
         try {
             reports = (JasperReport) JRLoader.loadObjectFromFile(path);

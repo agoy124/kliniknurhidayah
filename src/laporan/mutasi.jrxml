@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="99403c05-6470-4ea5-8aec-3c10201d3d03">
 	<property name="ireport.zoom" value="1.3310000000000004"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="8"/>
+	<property name="ireport.y" value="0"/>
 	<parameter name="startDate" class="java.util.Date"/>
 	<parameter name="endDate" class="java.util.Date"/>
 	<parameter name="startDate1" class="java.util.Date"/>
@@ -26,30 +26,34 @@
 	<title>
 		<band height="137" splitType="Stretch">
 			<staticText>
-				<reportElement x="128" y="14" width="294" height="23" uuid="00cbd69d-dc66-4827-84dd-8495905b8fa0"/>
+				<reportElement x="252" y="4" width="294" height="23" uuid="00cbd69d-dc66-4827-84dd-8495905b8fa0"/>
 				<textElement textAlignment="Center">
-					<font size="18" isBold="true"/>
+					<font fontName="Times New Roman" size="18" isBold="true"/>
 				</textElement>
 				<text><![CDATA[KLINIK NURHIDAYAH MEDICAL]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="151" y="57" width="249" height="42" uuid="52c3295a-6022-40d3-960d-259dac4181bd"/>
+				<reportElement x="275" y="47" width="249" height="42" uuid="52c3295a-6022-40d3-960d-259dac4181bd"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="10"/>
 				</textElement>
 				<text><![CDATA[Jl. Raya Susukan No.43, Sukmajaya, Kec. Tajur Halang, Kabupaten Bogor, Jawa Barat 16320]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="223" y="37" width="107" height="20" uuid="b9569f79-9be3-43eb-92b4-ae52ab351460"/>
+				<reportElement x="347" y="27" width="107" height="20" uuid="b9569f79-9be3-43eb-92b4-ae52ab351460"/>
 				<textElement>
 					<font size="14"/>
 				</textElement>
 				<text><![CDATA[TAJURHALANG]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="266" y="111" width="100" height="20" uuid="d90f8905-b7c0-4eb3-b2d1-eefb044928c3"/>
+				<reportElement x="390" y="101" width="100" height="20" uuid="d90f8905-b7c0-4eb3-b2d1-eefb044928c3"/>
 				<text><![CDATA[LAPORAN MUTASI]]></text>
 			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="196" height="101" uuid="96e618df-24d0-463a-be0d-51b3ceab094f"/>
+				<imageExpression><![CDATA["C:\\Users\\YOGA\\Documents\\KKP\\klinik.jpg"]]></imageExpression>
+			</image>
 		</band>
 	</title>
 	<columnHeader>

@@ -46,21 +46,21 @@ JOIN dokter ON res.id_dokter = dokter.id_dokter]]>
 	<title>
 		<band height="169" splitType="Stretch">
 			<staticText>
-				<reportElement style="Title" x="139" y="0" width="291" height="51" uuid="82eaf09c-216a-4101-bffa-724442df7921"/>
+				<reportElement style="Title" x="256" y="0" width="291" height="51" uuid="82eaf09c-216a-4101-bffa-724442df7921"/>
 				<textElement verticalAlignment="Middle">
 					<font size="24" pdfFontName="Times-Roman"/>
 				</textElement>
 				<text><![CDATA[Klinik Nurhidayah Medical]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="SubTitle" x="237" y="51" width="89" height="22" uuid="83d5dd59-d0d9-4ef3-8dec-0695cbc43788"/>
+				<reportElement style="SubTitle" x="354" y="51" width="89" height="22" uuid="83d5dd59-d0d9-4ef3-8dec-0695cbc43788"/>
 				<textElement>
 					<font fontName="Times New Roman" pdfFontName="Times-Roman"/>
 				</textElement>
 				<text><![CDATA[Tajurhalang]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="156" y="73" width="249" height="42" uuid="5a8666a0-12d7-468d-9d66-b20627c752ae"/>
+				<reportElement x="273" y="73" width="249" height="42" uuid="5a8666a0-12d7-468d-9d66-b20627c752ae"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="10"/>
 				</textElement>
@@ -76,6 +76,10 @@ JOIN dokter ON res.id_dokter = dokter.id_dokter]]>
 			<line>
 				<reportElement x="194" y="157" width="175" height="1" uuid="6b12f272-f705-4b2b-925f-996c806c7d15"/>
 			</line>
+			<image>
+				<reportElement x="0" y="0" width="194" height="115" uuid="0743f426-2a94-4259-914d-9b63655af9fe"/>
+				<imageExpression><![CDATA["C:\\Users\\YOGA\\Documents\\KKP\\klinik.jpg"]]></imageExpression>
+			</image>
 		</band>
 	</title>
 	<pageHeader>

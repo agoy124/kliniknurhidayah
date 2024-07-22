@@ -18,7 +18,7 @@ import vp.dataDokter;
 
 /**
  *
- * @author FADIL
+ * @author 
  */
 public class Berobat extends javax.swing.JFrame {
     private Connection conn = new helper.database().connect();

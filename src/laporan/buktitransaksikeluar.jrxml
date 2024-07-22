@@ -28,28 +28,32 @@
 	<title>
 		<band height="146" splitType="Stretch">
 			<staticText>
-				<reportElement x="160" y="61" width="241" height="30" uuid="cf7ad984-0e70-40b8-86dc-d5c1f9cef6a2"/>
+				<reportElement x="247" y="56" width="241" height="30" uuid="cf7ad984-0e70-40b8-86dc-d5c1f9cef6a2"/>
 				<textElement textAlignment="Center"/>
 				<text><![CDATA[Jl. Raya Susukan No.43, Sukmajaya, Kec. Tajur Halang, Kabupaten Bogor, Jawa Barat 16320]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="250" y="41" width="79" height="20" uuid="556a0730-589b-4543-89d2-503a7d9fb2a5"/>
+				<reportElement x="337" y="36" width="79" height="20" uuid="556a0730-589b-4543-89d2-503a7d9fb2a5"/>
 				<text><![CDATA[TAJURHALANG]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="106" y="5" width="362" height="36" uuid="03f67045-9272-491e-812a-1d4f19de1faf"/>
+				<reportElement x="193" y="0" width="362" height="36" uuid="03f67045-9272-491e-812a-1d4f19de1faf"/>
 				<textElement>
 					<font size="24" isBold="false" isItalic="false"/>
 				</textElement>
 				<text><![CDATA[KLINIK NURHIDAYAH MEDICAL]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="186" y="105" width="194" height="20" uuid="1bbf74fb-861e-4d5d-842a-64425ca3cd43"/>
+				<reportElement x="273" y="100" width="194" height="20" uuid="1bbf74fb-861e-4d5d-842a-64425ca3cd43"/>
 				<textElement>
 					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[BUKTI TRANSAKSI KELUAR]]></text>
 			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="193" height="100" uuid="73b77dac-4125-4772-88f2-fd32c8888ef9"/>
+				<imageExpression><![CDATA["C:\\Users\\YOGA\\Documents\\KKP\\klinik.jpg"]]></imageExpression>
+			</image>
 		</band>
 	</title>
 	<columnHeader>

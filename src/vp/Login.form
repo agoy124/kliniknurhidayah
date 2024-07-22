@@ -151,7 +151,7 @@
               <Font name="Times New Roman" size="18" style="3"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Klinik Pratama Rawat Inap"/>
+            <Property name="text" type="java.lang.String" value="Klinik"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
         </Component>

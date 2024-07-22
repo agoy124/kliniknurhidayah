@@ -65,21 +65,21 @@ WHERE t.tgl_trx BETWEEN $P{startDate} AND $P{endDate}]]>
 	<title>
 		<band height="171" splitType="Stretch">
 			<staticText>
-				<reportElement style="Title" x="222" y="0" width="291" height="51" uuid="82eaf09c-216a-4101-bffa-724442df7921"/>
+				<reportElement style="Title" x="255" y="1" width="291" height="51" uuid="82eaf09c-216a-4101-bffa-724442df7921"/>
 				<textElement verticalAlignment="Middle">
 					<font size="24" pdfFontName="Times-Roman"/>
 				</textElement>
 				<text><![CDATA[Klinik Nurhidayah Medical]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="SubTitle" x="320" y="51" width="89" height="22" uuid="83d5dd59-d0d9-4ef3-8dec-0695cbc43788"/>
+				<reportElement style="SubTitle" x="353" y="52" width="89" height="22" uuid="83d5dd59-d0d9-4ef3-8dec-0695cbc43788"/>
 				<textElement>
 					<font fontName="Times New Roman" pdfFontName="Times-Roman"/>
 				</textElement>
 				<text><![CDATA[Tajurhalang]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="239" y="73" width="249" height="42" uuid="5a8666a0-12d7-468d-9d66-b20627c752ae"/>
+				<reportElement x="272" y="74" width="249" height="42" uuid="5a8666a0-12d7-468d-9d66-b20627c752ae"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="10"/>
 				</textElement>
@@ -105,10 +105,6 @@ WHERE t.tgl_trx BETWEEN $P{startDate} AND $P{endDate}]]>
 				<textElement verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$P{startDate}]]></textFieldExpression>
 			</textField>
-			<image>
-				<reportElement x="10" y="10" width="555" height="79" uuid="82b234cd-4640-479d-9210-7c1b5ce6e359"/>
-				<imageExpression><![CDATA["C:\\Users\\YOGA\\Downloads\\klinik.jpg"]]></imageExpression>
-			</image>
 			<staticText>
 				<reportElement x="0" y="141" width="234" height="19" uuid="115bd3be-f893-43e0-bb39-c767f93083d1"/>
 				<textElement>
@@ -119,6 +115,10 @@ WHERE t.tgl_trx BETWEEN $P{startDate} AND $P{endDate}]]>
 			<line>
 				<reportElement x="0" y="159" width="222" height="1" uuid="892f1930-4a3b-476b-9d4d-d9627f5c90fb"/>
 			</line>
+			<image>
+				<reportElement x="0" y="1" width="181" height="97" uuid="8d810c20-a9ce-4b67-bfbb-d3adf74ddda9"/>
+				<imageExpression><![CDATA["C:\\Users\\YOGA\\Documents\\KKP\\klinik.jpg"]]></imageExpression>
+			</image>
 		</band>
 	</title>
 	<pageHeader>
@@ -285,7 +285,7 @@ WHERE t.tgl_trx BETWEEN $P{startDate} AND $P{endDate}]]>
 					</textElement>
 					<textFieldExpression><![CDATA["Rp. " + new java.text.DecimalFormat("#,##0.00").format($F{kembalian})]]></textFieldExpression>
 				</textField>
-				<textField>
+				<textField pattern="dd/MM/yyyy">
 					<reportElement x="50" y="0" width="50" height="15" uuid="85f0bab1-dcbe-4b13-b1ce-996f0c1349ef"/>
 					<textElement>
 						<font fontName="Times New Roman" size="8"/>

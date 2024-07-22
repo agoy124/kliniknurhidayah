@@ -40,36 +40,40 @@
 	<title>
 		<band height="169" splitType="Stretch">
 			<staticText>
-				<reportElement style="Title" x="139" y="0" width="291" height="51" uuid="82eaf09c-216a-4101-bffa-724442df7921"/>
+				<reportElement style="Title" x="230" y="1" width="291" height="51" uuid="82eaf09c-216a-4101-bffa-724442df7921"/>
 				<textElement verticalAlignment="Middle">
 					<font size="24" pdfFontName="Times-Roman"/>
 				</textElement>
 				<text><![CDATA[Klinik Nurhidayah Medical]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="SubTitle" x="237" y="51" width="89" height="22" uuid="83d5dd59-d0d9-4ef3-8dec-0695cbc43788"/>
+				<reportElement style="SubTitle" x="328" y="52" width="89" height="22" uuid="83d5dd59-d0d9-4ef3-8dec-0695cbc43788"/>
 				<textElement>
 					<font fontName="Times New Roman" pdfFontName="Times-Roman"/>
 				</textElement>
 				<text><![CDATA[Tajurhalang]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="156" y="73" width="249" height="42" uuid="5a8666a0-12d7-468d-9d66-b20627c752ae"/>
+				<reportElement x="247" y="74" width="249" height="42" uuid="5a8666a0-12d7-468d-9d66-b20627c752ae"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="10"/>
 				</textElement>
 				<text><![CDATA[Jl. Raya Susukan No.43, Sukmajaya, Kec. Tajur Halang, Kabupaten Bogor, Jawa Barat 16320]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="209" y="136" width="186" height="22" uuid="f3a31a9a-87f6-4c38-a31f-9a1cb5eb27c0"/>
+				<reportElement x="300" y="137" width="186" height="22" uuid="f3a31a9a-87f6-4c38-a31f-9a1cb5eb27c0"/>
 				<textElement>
 					<font fontName="Times New Roman" size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[LAPORAN DATA OBAT]]></text>
 			</staticText>
 			<line>
-				<reportElement x="194" y="157" width="175" height="1" uuid="6b12f272-f705-4b2b-925f-996c806c7d15"/>
+				<reportElement x="285" y="158" width="175" height="1" uuid="6b12f272-f705-4b2b-925f-996c806c7d15"/>
 			</line>
+			<image>
+				<reportElement x="0" y="1" width="226" height="99" uuid="3bb781e5-18ee-4745-be7e-06698620c197"/>
+				<imageExpression><![CDATA["C:\\Users\\YOGA\\Documents\\KKP\\klinik.jpg"]]></imageExpression>
+			</image>
 		</band>
 	</title>
 	<pageHeader>

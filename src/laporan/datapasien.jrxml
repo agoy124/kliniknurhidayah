@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4e5e3ffe-b5c5-4e0f-b82a-d368780b5882">
 	<property name="ireport.zoom" value="1.6105100000000014"/>
 	<property name="ireport.x" value="9"/>
-	<property name="ireport.y" value="236"/>
+	<property name="ireport.y" value="0"/>
 	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true" pdfFontName="Times-Bold"/>
 	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
 	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
@@ -81,43 +81,47 @@
 	<title>
 		<band height="168" splitType="Stretch">
 			<staticText>
-				<reportElement style="Title" x="139" y="0" width="291" height="51" uuid="82eaf09c-216a-4101-bffa-724442df7921"/>
+				<reportElement style="Title" x="257" y="1" width="291" height="51" uuid="82eaf09c-216a-4101-bffa-724442df7921"/>
 				<textElement verticalAlignment="Middle">
 					<font size="24" pdfFontName="Times-Roman"/>
 				</textElement>
 				<text><![CDATA[Klinik Nurhidayah Medical]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="SubTitle" x="237" y="51" width="89" height="22" uuid="83d5dd59-d0d9-4ef3-8dec-0695cbc43788"/>
+				<reportElement style="SubTitle" x="355" y="52" width="89" height="22" uuid="83d5dd59-d0d9-4ef3-8dec-0695cbc43788"/>
 				<textElement>
 					<font fontName="Times New Roman" pdfFontName="Times-Roman"/>
 				</textElement>
 				<text><![CDATA[Tajurhalang]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="156" y="73" width="249" height="42" uuid="5a8666a0-12d7-468d-9d66-b20627c752ae"/>
+				<reportElement x="274" y="74" width="249" height="42" uuid="5a8666a0-12d7-468d-9d66-b20627c752ae"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="10"/>
 				</textElement>
 				<text><![CDATA[Jl. Raya Susukan No.43, Sukmajaya, Kec. Tajur Halang, Kabupaten Bogor, Jawa Barat 16320]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="202" y="136" width="180" height="22" uuid="f3a31a9a-87f6-4c38-a31f-9a1cb5eb27c0"/>
+				<reportElement x="194" y="133" width="180" height="22" uuid="f3a31a9a-87f6-4c38-a31f-9a1cb5eb27c0"/>
 				<textElement>
 					<font fontName="Times New Roman" size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[LAPORAN DATA PASIEN]]></text>
 			</staticText>
 			<line>
-				<reportElement x="194" y="156" width="194" height="1" uuid="6b12f272-f705-4b2b-925f-996c806c7d15"/>
+				<reportElement x="186" y="153" width="194" height="1" uuid="6b12f272-f705-4b2b-925f-996c806c7d15"/>
 			</line>
+			<image>
+				<reportElement x="0" y="1" width="194" height="100" uuid="159ae45d-6864-440d-ba47-608a638381f9"/>
+				<imageExpression><![CDATA["C:\\Users\\YOGA\\Documents\\KKP\\klinik.jpg"]]></imageExpression>
+			</image>
 		</band>
 	</title>
 	<pageHeader>
 		<band splitType="Stretch"/>
 	</pageHeader>
 	<columnHeader>
-		<band height="28" splitType="Stretch">
+		<band height="20" splitType="Stretch">
 			<line>
 				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1" uuid="c49124b0-0cf3-4905-b283-f951ae464f0f"/>
 				<graphicElement>
@@ -183,17 +187,46 @@
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="15" splitType="Stretch"/>
-	</detail>
-	<columnFooter>
-		<band height="196" splitType="Stretch">
+		<band height="15" splitType="Stretch">
 			<frame>
 				<reportElement style="Row" mode="Opaque" x="0" y="0" width="555" height="15" uuid="1a48e78d-d4e5-44f4-be6e-ea73b237c417"/>
 				<textField>
 					<reportElement x="37" y="0" width="56" height="15" uuid="7cc35fcc-3225-4c9c-999c-dadfe48f695f"/>
 					<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
 				</textField>
+				<textField>
+					<reportElement x="104" y="0" width="77" height="15" uuid="8c8f450f-dcdd-45e5-a48e-3837da64176d"/>
+					<textFieldExpression><![CDATA[$F{jk}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="0" width="37" height="15" uuid="2b5bfb23-9948-4e11-b29a-cfb13ad16112"/>
+					<textFieldExpression><![CDATA[$F{nik}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="287" y="0" width="82" height="15" uuid="b934c65f-ea5d-475f-94ab-9dc2aefbd00f"/>
+					<textFieldExpression><![CDATA[$F{no_hp}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="194" y="0" width="85" height="15" uuid="19633423-204e-4d3f-97cf-eeefa9584309"/>
+					<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="370" y="0" width="46" height="15" uuid="a702acb4-d997-4b02-8f99-b5520cea20d7"/>
+					<textFieldExpression><![CDATA[$F{goldar}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="416" y="0" width="45" height="15" uuid="66b0d86e-81d6-4e64-b39b-933360ac39e5"/>
+					<textFieldExpression><![CDATA[$F{tempat}]]></textFieldExpression>
+				</textField>
+				<textField pattern="dd/MM/yyyy">
+					<reportElement x="461" y="0" width="45" height="15" uuid="8f6a5b06-3e9f-459f-af76-c5b045d609a4"/>
+					<textFieldExpression><![CDATA[$F{tgl_lahir}]]></textFieldExpression>
+				</textField>
 			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="196" splitType="Stretch">
 			<staticText>
 				<reportElement x="415" y="81" width="139" height="20" uuid="9772ef28-b756-4a37-82fc-638de14476c6"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -221,34 +254,6 @@
 					<font fontName="Times New Roman" size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Bogor, "+new SimpleDateFormat("EEEE dd MMMM yyyy", new Locale("id")).format(new Date())]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="104" y="0" width="77" height="15" uuid="8c8f450f-dcdd-45e5-a48e-3837da64176d"/>
-				<textFieldExpression><![CDATA[$F{jk}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="0" y="0" width="37" height="15" uuid="2b5bfb23-9948-4e11-b29a-cfb13ad16112"/>
-				<textFieldExpression><![CDATA[$F{nik}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="287" y="0" width="82" height="15" uuid="b934c65f-ea5d-475f-94ab-9dc2aefbd00f"/>
-				<textFieldExpression><![CDATA[$F{no_hp}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="194" y="0" width="85" height="15" uuid="19633423-204e-4d3f-97cf-eeefa9584309"/>
-				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="370" y="0" width="46" height="15" uuid="a702acb4-d997-4b02-8f99-b5520cea20d7"/>
-				<textFieldExpression><![CDATA[$F{goldar}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="416" y="0" width="45" height="15" uuid="66b0d86e-81d6-4e64-b39b-933360ac39e5"/>
-				<textFieldExpression><![CDATA[$F{tempat}]]></textFieldExpression>
-			</textField>
-			<textField pattern="dd/MM/yyyy">
-				<reportElement x="461" y="0" width="45" height="15" uuid="8f6a5b06-3e9f-459f-af76-c5b045d609a4"/>
-				<textFieldExpression><![CDATA[$F{tgl_lahir}]]></textFieldExpression>
 			</textField>
 		</band>
 	</columnFooter>

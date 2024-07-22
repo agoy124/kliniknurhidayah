@@ -62,7 +62,7 @@ public class Login extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Klinik Pratama Rawat Inap");
+        jLabel4.setText("Klinik");
         jLabel4.setToolTipText("");
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N

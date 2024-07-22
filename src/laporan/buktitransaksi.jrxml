@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4e5e3ffe-b5c5-4e0f-b82a-d368780b5882">
 	<property name="ireport.zoom" value="1.4641000000000022"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="102"/>
+	<property name="ireport.y" value="0"/>
 	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true" pdfFontName="Times-Bold"/>
 	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
 	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
@@ -65,28 +65,28 @@ INNER JOIN dokter AS d ON d.id_dokter = r.id_dokter WHERE id_transaksi = $P{id_t
 	<title>
 		<band height="163" splitType="Stretch">
 			<staticText>
-				<reportElement style="Title" x="213" y="38" width="138" height="21" uuid="82eaf09c-216a-4101-bffa-724442df7921"/>
+				<reportElement style="Title" x="300" y="33" width="138" height="21" uuid="82eaf09c-216a-4101-bffa-724442df7921"/>
 				<textElement verticalAlignment="Middle">
 					<font size="10" pdfFontName="Times-Roman"/>
 				</textElement>
 				<text><![CDATA[Klinik Nurhidayah Medical]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="SubTitle" x="238" y="76" width="88" height="22" uuid="83d5dd59-d0d9-4ef3-8dec-0695cbc43788"/>
+				<reportElement style="SubTitle" x="325" y="71" width="88" height="22" uuid="83d5dd59-d0d9-4ef3-8dec-0695cbc43788"/>
 				<textElement>
 					<font fontName="Times New Roman" pdfFontName="Times-Roman"/>
 				</textElement>
 				<text><![CDATA[Tajurhalang]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="156" y="98" width="249" height="42" uuid="5a8666a0-12d7-468d-9d66-b20627c752ae"/>
+				<reportElement x="243" y="93" width="249" height="42" uuid="5a8666a0-12d7-468d-9d66-b20627c752ae"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="10"/>
 				</textElement>
 				<text><![CDATA[Jl. Raya Susukan No.43, Sukmajaya, Kec. Tajur Halang, Kabupaten Bogor, Jawa Barat 16320]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Title" x="194" y="15" width="177" height="23" uuid="b9991f7c-2936-4d61-814b-bf698534a618"/>
+				<reportElement style="Title" x="281" y="10" width="177" height="23" uuid="b9991f7c-2936-4d61-814b-bf698534a618"/>
 				<textElement verticalAlignment="Middle">
 					<font size="16" pdfFontName="Times-Roman"/>
 				</textElement>
@@ -98,6 +98,10 @@ INNER JOIN dokter AS d ON d.id_dokter = r.id_dokter WHERE id_transaksi = $P{id_t
 					<pen lineWidth="0.5" lineColor="#999999"/>
 				</graphicElement>
 			</line>
+			<image>
+				<reportElement x="0" y="0" width="203" height="93" uuid="601e3f29-a948-417e-997e-ffe3b98e81dd"/>
+				<imageExpression><![CDATA["C:\\Users\\YOGA\\Documents\\KKP\\klinik.jpg"]]></imageExpression>
+			</image>
 		</band>
 	</title>
 	<pageHeader>
